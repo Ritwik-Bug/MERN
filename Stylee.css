@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #131921;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f3a847;
+}
+
+.search-box {
+    display: flex;
+    width: 50%;
+}
+
+.search-box select {
+    padding: 8px;
+    border: none;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+}
+
+.search-box button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #febd69;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    font-size: 12px;
+}
+
+.nav-links strong {
+    display: block;
+    font-size: 14px;
+}
+
+.cart {
+    font-size: 16px;
+}
+
+/* SUB NAV */
+.sub-nav {
+    background-color: #232f3e;
+    padding: 10px 20px;
+}
+
+.sub-nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* HERO */
+.hero {
+    background-image: url("https://via.placeholder.com/1500x400");
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+}
+
+/* PRODUCTS */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #e3e6e6;
+}
+
+.card {
+    background-color: white;
+    padding: 15px;
+}
+
+.card img {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.card a {
+    text-decoration: none;
+    color: #007185;
+}
+
+/* FOOTER */
+footer {
+    background-color: #131921;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}

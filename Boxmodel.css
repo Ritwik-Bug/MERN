@@ -1,0 +1,22 @@
+h1{
+    color: brown;
+    /* border-style: solid;
+    border-color: black;
+    border-width: 3px; */
+
+    border:solid black 5px;
+    width: 400px;
+
+}
+
+p{
+    background-color: lime;
+    color: black;
+     width: 400px;
+}
+
+.fistpara{
+    color: red;
+    background-color: yellowgreen;
+     width: 400px;
+}

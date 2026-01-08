@@ -9,14 +9,17 @@ h1{
 
 }
 
-p{
-    background-color: lime;
-    color: black;
-     width: 400px;
-}
-
 .fistpara{
     color: red;
     background-color: yellowgreen;
      width: 400px;
+     padding: 20px;
 }
+
+.secondpara{
+    background-color: lime;
+    color: black;
+     width: 400px;
+     padding: 20px;
+}
+

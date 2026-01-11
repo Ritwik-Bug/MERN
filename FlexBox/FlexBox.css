@@ -1,0 +1,46 @@
+.container{
+    border: 5px solid black;
+    background-color: beige;
+    margin:2px;
+    padding:2px;
+    display: flex;
+    height: 500px;
+    /* by default flex direction is row
+    we can also set it as column using the below property */
+    /* flex-direction: column;
+    we can use row-recerse or column-reverse to reverse the order of items */
+
+    flex-wrap: wrap;
+    /* this property allows the flex items to wrap to
+     the next line if they exceed the container width */
+
+     justify-content: center;
+     /* this property aligns the flex items along the main axis
+     basically beech m
+     we can use start,end */
+
+     justify-content: space-between;
+     /* first and end wale m space equal */
+
+     
+}
+
+.box{
+    height: 180px;
+    width: 200px;
+    border: 2px solid black;
+    margin:50px;
+    padding:30px;
+}
+#box1{
+    background-color: lightcoral;
+}
+#box2{
+    background-color: lightblue;
+}
+#box3{
+    background-color: lightgreen;
+}
+#box4{
+    background-color: lightgoldenrodyellow;
+}

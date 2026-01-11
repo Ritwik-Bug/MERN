@@ -4,25 +4,28 @@
     margin:2px;
     padding:2px;
     display: flex;
-    height: 500px;
+    height: 1200px;
+    flex-direction: row;
     /* by default flex direction is row
     we can also set it as column using the below property */
     /* flex-direction: column;
-    we can use row-recerse or column-reverse to reverse the order of items */
+    we can use row-reverse or column-reverse to reverse the order of items */
 
     flex-wrap: wrap;
     /* this property allows the flex items to wrap to
      the next line if they exceed the container width */
 
-     justify-content: center;
+     /* justify-content: center; */
      /* this property aligns the flex items along the main axis
      basically beech m
      we can use start,end */
 
-     justify-content: space-between;
+     /* justify-content: space-between; */
      /* first and end wale m space equal */
 
-     
+        align-items: center;
+        /* this property aligns the flex items along the cross axis */
+
 }
 
 .box{
@@ -34,6 +37,8 @@
 }
 #box1{
     background-color: lightcoral;
+    /* order: 2; */
+    /* this property controls the order of flex items */
 }
 #box2{
     background-color: lightblue;
@@ -44,3 +49,8 @@
 #box4{
     background-color: lightgoldenrodyellow;
 }
+
+/* flex-grow, flex-shrink, flex-basis */
+/* flex-basis to set dimension */
+/* flex-grow to increase the size of an element when inspect*/
+/* flex-shrink to decrease the size of an element */

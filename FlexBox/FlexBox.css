@@ -54,3 +54,11 @@
 /* flex-basis to set dimension */
 /* flex-grow to increase the size of an element when inspect*/
 /* flex-shrink to decrease the size of an element */
+
+/* horizontal axis justify-content: */
+/* start, center, end, space-between, space-around, space-evenly */
+
+/* vertical axis align-items: */
+/* start, center, end, stretch, baseline */
+
+/* @media queries for responsive design */

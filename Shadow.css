@@ -18,6 +18,10 @@ p{
    border:1px solid brown;
    margin: 5px;
    padding:5px;
+
+   box-shadow: 20px 25px 5px  brown;
+   /* box shadow this property adds a shadow effect to the element 
+   and it can be customized with offset-x, offset-y, blur-radius, spread-radius, color */
 }
 
 h1{

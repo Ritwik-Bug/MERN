@@ -9,6 +9,7 @@
 
 p{
     color:red;
+    text-shadow: 10px 10px 5px black;
 }
 
 .box{
@@ -19,9 +20,15 @@ p{
    margin: 5px;
    padding:5px;
 
-   box-shadow: 20px 25px 5px  brown;
+   /* box-shadow: 20px 20px 5px 100px rgb(200,50,20); */
+
    /* box shadow this property adds a shadow effect to the element 
    and it can be customized with offset-x, offset-y, blur-radius, spread-radius, color */
+
+   /* Box shadow inset this property adds an inner shadow effect to the element */
+
+   /* In Box shadow we can add multiple shadows */
+   box-shadow: 10px 20px  red, 15px 25px green
 }
 
 h1{

@@ -1,17 +1,151 @@
-*{
+/* ---------- Global Reset ---------- */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    height: 100%;
-     width: 100%;
+/* ---------- Body ---------- */
+.body_container {
+    margin: 20px;
+    background-color: #f4f6f8;
+    min-height: 100vh;
 }
 
-.container{
-    max-width: 95vw;
-    padding: 2rem 1rem;
+/* ---------- Main Wrapper ---------- */
+.container {
+    max-width: 1200px;
     margin: 0 auto;
-    background-color: aqua;
+    padding: 2rem 1rem;
+}
+
+/* ---------- Header ---------- */
+.header_container {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.header_title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.header_desc {
+    font-size: 1rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* ---------- Main Section ---------- */
+.main_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+/* ---------- Card ---------- */
+.card_container {
+    background-color: #ffffff;
+    border-radius: 12px;
+     border: 1px solid black;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card_container:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* ---------- Card Image ---------- */
+.card_image_container {
+    display: block;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card_image_container:hover .card_image {
+    transform: scale(1.08);
+}
+
+/* ---------- Card Title ---------- */
+.card_title_container {
+    padding: 1.5rem;
+}
+
+.card_title_link {
+    text-decoration: none;
+}
+
+.card_title {
+    font-size: 1.3rem;
+    color: #222;
+    transition: color 0.3s ease;
+}
+
+.card_title_link:hover .card_title {
+    color: #0077ff;
+}
+
+/* ---------- Card Footer ---------- */
+.card_footer_container {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #eee;
+}
+
+/* ---------- Author Section ---------- */
+.author_container {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.author_avatar_container {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.author_avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author_Info_container span {
+    display: block;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.author_Info_container span:first-child {
+    font-weight: 600;
+    color: #222;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+    .main_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .main_container {
+        grid-template-columns: 1fr;
+    }
 }

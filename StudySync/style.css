@@ -176,3 +176,37 @@ transform: translateX(0);
     height: 100%;
     width: 100%;
 }
+
+
+@media screen and (min-width:768px) {
+    .main-section{
+        flex-direction: row;
+    }
+    .content-left{
+        max-width: 50%;
+        text-align: left;
+    }
+    .section-heading{
+        padding-left: 0;
+    }
+    .button-group{
+        justify-content: start;
+        padding-left: 0;
+    }
+    .section_label{
+        font-size: 1rem;
+    }
+    .section-title{
+        font-size: 3.8rem;
+    }
+    .image-container{
+        height: 67vh;
+    }
+    .section-description{
+        font-size: 1.1rem;
+        color: var(--gray);
+        width: 78%;
+    }
+}
+
+

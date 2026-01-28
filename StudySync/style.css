@@ -212,8 +212,12 @@ transform: translateX(0);
 
 .company-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 3rem;
+    animation: slideFromLeft 1s ease forwards;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode;slide */
 }
 
 .company-grid{
@@ -221,5 +225,20 @@ transform: translateX(0);
     grid-template-columns: repeat(2,1fr);
     gap:3rem;
     padding:1rem;
-    
+    background-color: var(--light-gray);
+    border-radius: 0.625rem;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+
+}
+
+.company-logo{
+    font-size: 1rem;
+    font-weight: 500;
+    color:var(--gray);
+    gap:0.5rem;
+}
+
+.logo-text{
+    font-size: 1.5rem;
 }

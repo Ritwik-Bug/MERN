@@ -42,3 +42,41 @@ for(let i=0;i<5;i++){
         console.log(i);
     }
 }
+
+let firstname="Ritwik";
+let lastname='BADMASH';
+
+// Template literals (using backticks)
+let name=`Ritwik
+don
+jai baba ki`; 
+
+
+
+console.log(firstname+" "+lastname); // Concatenation using + operator
+
+console.log(typeof (firstname)); // Output: string
+console.log(typeof (lastname)); // Output: string
+
+console.log(lastname);
+console.log(name);
+
+
+// operations on string
+let str1="Hello";
+let str2="World";
+console.log(str1 + " " + str2); // Concatenation
+console.log(str1.length);
+console.log(str1.toUpperCase());
+console.log(str1.toLowerCase());
+console.log(str1.includes("lo"));   
+
+let Final=`${str1} and ${str2}`;
+console.log(Final);
+
+let str='muaaah';
+console.log(str.substring(0, 3)); // Output: 'mua'
+// ending character ko include nahi karta hai
+console.log(str.slice(0, 3)); // Output: 'mua'
+
+

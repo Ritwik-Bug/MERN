@@ -55,10 +55,21 @@ processData("JS Functions", function (msg) {
 });
 
 // Function Calls
-add(2, 3);
+let ans=add(2, 3);
+console.log("Addition: " + ans);
+
 multiply(2, 3);
 subtract(5, 2);
 divide(10, 2);
 greet("Ritwik");
 square(4);
 displayMessage("Functions in JavaScript");
+
+
+function loop(){
+  for(let i=0;i<5;i++){
+  console.log("Iteration: " + i);
+}
+}
+loop();
+

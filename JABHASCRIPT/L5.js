@@ -72,6 +72,38 @@ for (let i = 0; i < products.length; i++) {
     console.log(products[i]);
 }
 
+let arr=[10,20,30,40,50];
 
+let evenArray=arr.filter(function(number){
+    return number%2===0;
+});
+
+console.log(evenArray);
+
+let ar=[1,2,'ritwik',null];
+
+let ans=ar.filter((value)=>{
+    if(typeof value === 'string'){
+        return true;
+    }
+    else{
+        return false;
+    }
+});
+console.log(ans);
+
+
+let arr2 = [1, 2, 3, 4];
+let sum = arr2.reduce(function(acc, curr) {
+    return acc + curr;
+}, 0);
+
+console.log(sum); // 10
+
+// Accumulator is the value that is returned by the 
+// callback function in the previous iteration.
+
+// Current value is the current element being processed 
+// in the array.
 
 

@@ -28,3 +28,17 @@ console.log(bc);
 let bc=21;
 
 
+// class hoisting
+// In JavaScript, class declarations are not hoisted. This means that you cannot 
+// use a class before it is declared in the code. If you try to create an instance 
+// of a class before its declaration, you will get a ReferenceError.
+const person1 = new Person();
+class Person {
+
+}
+//  const person1 = new Person();
+
+
+
+
+ 

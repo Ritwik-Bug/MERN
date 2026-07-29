@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edit and Remove in DOM</title>
+</head>
+
+<!-- Black background and white text -->
+<body style="background-color: rgb(0, 0, 0); color: white;">
+
+    <!-- Unordered list with class "language" -->
+    <ul class="language">
+
+        <!-- Initial list item -->
+        <li>JAVASCRIPT</li>
+
+    </ul>
+
+</body>
+
+<script>
+
+    // ==========================================
+    // Method 1 : Adding elements using innerHTML
+    // ==========================================
+
+    function addLang(langName){
+
+        // Create a new <li> element
+        const li = document.createElement('li');
+
+        // Insert text inside the li
+        // Example: <li>HTML</li>
+        li.innerHTML = langName;
+
+        // Select the ul and add the new li at the end
+        document.querySelector('.language').appendChild(li);
+    }
+
+    // Add HTML
+    addLang('HTML');
+
+    // Add Python
+    addLang('Python');
+
+
+    // ==========================================
+    // Method 2 : Optimized way using Text Node
+    // ==========================================
+
+    function addOpti(langName){
+
+        // Create a new li element
+        const li = document.createElement('li');
+
+        // Create a text node and attach it to li
+        // Faster and safer than innerHTML
+        li.appendChild(document.createTextNode(langName));
+
+        // Append li to ul
+        document.querySelector('.language').appendChild(li);
+    }
+
+    // Add C++
+    addOpti('C++');
+
+
+    /*
+        Current List:
+
+        1. JAVASCRIPT
+        2. HTML
+        3. Python
+        4. C++
+    */
+
+
+    // ==========================================
+    // EDITING ELEMENTS
+    // ==========================================
+
+    // Select the 2nd li element
+    // nth-child(2) means second child
+    const secondlang = document.querySelector("li:nth-child(2)");
+
+    // Replace HTML with CSS
+    // Current List:
+    // 1. JAVASCRIPT
+    // 2. CSS
+    // 3. Python
+    // 4. C++
+    secondlang.innerHTML = "CSS";
+
+
+    // ==========================================
+    // REPLACE AN ENTIRE ELEMENT
+    // ==========================================
+
+    // Create a new li element
+    const newli = document.createElement("li");
+
+    // Add text PHP
+    newli.textContent = "PHP";
+
+    // Replace the second li completely
+    // CSS element is removed and PHP is inserted
+    secondlang.replaceWith(newli);
+
+
+    /*
+        Final Output:
+
+        1. JAVASCRIPT
+        2. PHP
+        3. Python
+        4. C++
+
+        Explanation:
+        - HTML was first changed to CSS.
+        - Then the whole CSS <li> was replaced
+          by a new <li> containing PHP.
+    */
+
+    const firstLang=document.querySelector('li:nth-child(1)')
+    firstLang.outerHTML = '<li> TypeSCript </li>'
+
+    // remove
+    const lastlang=document.querySelector('li:last-child')
+    lastlang.remove()
+    
+</script>
+</html>

@@ -1,0 +1,168 @@
+// document
+// Represents the entire HTML document loaded in the browser.
+// It is the main entry point for accessing and manipulating page content.
+
+// document.title
+// Contains the text shown in the browser tab.
+// Can be read or changed dynamically.
+
+// document.URL
+// Stores the complete URL of the current webpage.
+
+// document.domain
+// Returns the domain name of the current website.
+
+// document.head
+// Represents the <head> section containing metadata, styles, and scripts.
+
+// document.body
+// Represents the visible content section of the webpage.
+
+// document.documentElement
+// Refers to the root <html> element of the document.
+
+// document.images
+// Collection of all image elements present on the page.
+
+// document.links
+// Collection of all hyperlinks that contain an href attribute.
+
+// document.forms
+// Collection of all form elements in the document.
+
+// document.anchors
+// Collection of anchor elements having a name attribute.
+
+// document.cookie
+// Used to store and retrieve browser cookies.
+
+// document.referrer
+// URL of the page from which the user navigated to the current page.
+
+// document.lastModified
+// Date and time when the document was last modified.
+
+// document.readyState
+// Indicates the loading status of the document.
+
+
+
+// innerHTML
+// Contains the HTML content inside an element.
+// Includes tags and nested elements.
+
+// innerText
+// Contains only the visible text inside an element.
+
+// textContent
+// Contains all text inside an element, including hidden text.
+
+// id
+// Unique identifier assigned to an element.
+
+// className
+// Contains all CSS class names assigned to an element.
+
+// classList
+// Provides access to individual CSS classes attached to an element.
+
+// style
+// Represents all inline CSS styles applied to an element.
+
+// attributes
+// Collection of all attributes present on an element.
+
+// children
+// Collection of direct child elements only.
+
+// childNodes
+// Collection of all child nodes including text and comment nodes.
+
+// parentElement
+// Refers to the immediate parent HTML element.
+
+// parentNode
+// Refers to the immediate parent node of an element.
+
+// firstElementChild
+// Returns the first child element of a parent element.
+
+// lastElementChild
+// Returns the last child element of a parent element.
+
+// nextElementSibling
+// Returns the next sibling element at the same level.
+
+// previousElementSibling
+// Returns the previous sibling element at the same level.
+
+// value
+// Stores the current value of form controls such as inputs and textareas.
+
+// checked
+// Indicates whether a checkbox or radio button is selected.
+
+// disabled
+// Indicates whether an element is disabled and cannot be interacted with.
+
+// selectedIndex
+// Represents the index of the selected option in a dropdown list.
+
+// scrollTop
+// Amount of vertical scrolling performed inside an element.
+
+// scrollLeft
+// Amount of horizontal scrolling performed inside an element.
+
+// clientWidth
+// Visible width of an element excluding borders and scrollbars.
+
+// clientHeight
+// Visible height of an element excluding borders and scrollbars.
+
+// offsetWidth
+// Total width of an element including padding and borders.
+
+// offsetHeight
+// Total height of an element including padding and borders.
+
+// offsetTop
+// Distance of an element from the top of its offset parent.
+
+// offsetLeft
+// Distance of an element from the left of its offset parent.
+
+
+
+// window
+// Global object representing the browser window.
+
+// window.innerWidth
+// Width of the browser viewport.
+
+// window.innerHeight
+// Height of the browser viewport.
+
+// window.outerWidth
+// Total browser window width including toolbars and borders.
+
+// window.outerHeight
+// Total browser window height including toolbars and borders.
+
+// window.screen
+// Provides information about the user's screen dimensions.
+
+// window.location
+// Contains information about the current URL and page location.
+
+// window.history
+// Stores information about the browser's navigation history.
+
+// window.navigator
+// Contains information about the browser and operating system.
+
+// window.localStorage
+// Persistent browser storage that remains after closing the browser.
+
+// window.sessionStorage
+// Temporary browser storage that exists until the tab is closed.

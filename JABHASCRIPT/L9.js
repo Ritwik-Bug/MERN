@@ -1,3 +1,7 @@
+// Hoisting
+
+
+
 // global scope
 // we can not access the variable before declaration
 // and we can access the variable after declaration anywhere in the global scope 
